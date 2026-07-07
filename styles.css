@@ -291,6 +291,29 @@ img {
   text-transform: uppercase;
 }
 
+.project-media,
+.project-media-grid {
+  margin-top: 1rem;
+}
+
+.project-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.project-media {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.project-media img {
+  width: 100%;
+  height: auto;
+}
+
 .metrics-list {
   margin-top: 1rem;
 }
@@ -335,6 +358,10 @@ img {
 
   .hero h1 {
     max-width: none;
+  }
+
+  .project-media-grid {
+    grid-template-columns: 1fr;
   }
 }
 
